@@ -19,9 +19,9 @@ st.set_page_config(page_title="Resume Ranker AI", layout="centered")
 st.title("📝Resume Ranker AI")
 st.write("Upload your **Resume** and a **Job Description (JD)** to check how well they match.")
 #upload a resume
-resume_file= st.file_uploader("Upload Job Description (PDF or .txt)", type=["pdf","txt"])
+resume_file= st.file_uploader("Upload Resume File (PDF or .txt)", type=["pdf","txt"])
 #upload job description
-jd_file = st.file_uploader("Upload job description (pdf or .txt)",type=["pdf",".txt"])
+jd_file = st.file_uploader("Upload Job description (pdf or .txt)",type=["pdf",".txt"])
 # Read & Display Contents
 if jd_file and resume_file:
     #read resume
